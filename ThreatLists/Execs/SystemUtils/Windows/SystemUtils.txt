@@ -1,0 +1,6 @@
+tree.com
+NETSTAT.EXE
+regedit.exe
+eventvwr.msc
+services.msc
+perfmon.msc

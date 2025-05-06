@@ -1,0 +1,133 @@
+[
+  {
+    "name": "Quick Assist",
+    "developer": "Microsoft Corp.",
+    "primaryCommandLineSearchStrings": ["QuickAssist.exe"],
+    "secondaryCommandLineSearchStrings":[null],
+    "tcpPorts": [null],
+    "udpPorts": [null],
+    "storeVersionAvailable":true,
+    "arpUninstallTargets": ["#RemoveQuickAssist"]
+  },
+  {
+    "name": "Parsec",
+    "developer": "Parsec Cloud Inc.",
+    "primaryCommandLineSearchStrings": ["parsecd.exe"],
+    "secondaryCommandLineSearchStrings":[null],
+    "tcpPorts":[null],
+    "udpPorts": [3478],
+    "storeVersionAvailable": false,
+    "arpUninstallTargets": ["Parsec"]
+  },
+  {
+    "name": "Zoho Assist",
+    "developer": "Zoho Corporation",
+    "primaryCommandLineSearchStrings": ["Zoho Assist.exe"],
+    "secondaryCommandLineSearchStrings":[null],
+    "tcpPorts": [null],
+    "udpPorts": [null],
+    "storeVersionAvailable": false,
+    "arpUninstallTargets": ["Zoho Assist"]
+  },
+  {
+    "name": "RemotePC",
+    "developer": "IDrive Inc",
+    "primaryCommandLineSearchStrings": ["RemotePCHostUI.exe"],
+    "secondaryCommandLineSearchStrings":["RemotePCService.exe", "HostService.exe", "RPCDownloader.exe", "RPCPerformanceService.exe"],
+    "tcpPorts": [null],
+    "udpPorts": [null],
+    "storeVersionAvailable": true,
+    "arpUninstallTargets": ["RemotePC"]
+  },
+  {
+    "name": "TeamViewer",
+    "developer": "TeamViewer",
+    "primaryCommandLineSearchStrings": ["TeamViewer.exe"],
+    "secondaryCommandLineSearchStrings": ["TeamViewer_Service.exe"],
+    "tcpPorts": [5938],
+    "udpPorts": [5938],
+    "storeVersionAvailable": true,
+    "arpUninstallTargets": ["TeamViewer"]
+  },
+  {
+    "name": "Supremo",
+    "developer": "Nanosystems S.r.l.",
+    "primaryCommandLineSearchStrings": ["Supremo.exe"],
+    "secondaryCommandLineSearchStrings": ["SupremoHelper.exe"],
+    "tcpPorts": [5938],
+    "udpPorts": [null],
+    "storeVersionAvailable": false,
+    "arpUninstallTargets": ["#RemovePortableExec"]
+  },
+  {
+    "name": "AnyDesk",
+    "developer": "AnyDesk Software GmbH",
+    "primaryCommandLineSearchStrings": ["AnyDesk.exe"],
+    "secondaryCommandLineSearchStrings": [null],
+    "tcpPorts": [6568],
+    "udpPorts": [null],
+    "storeVersionAvailable": false,
+    "arpUninstallTargets": ["AnyDesk", "#RemovePortableExec"]
+  },
+  {
+    "name": "AnyViewer",
+    "developer": "AOMEI International Network Limited",
+    "primaryCommandLineSearchStrings": ["AVCore.exe"],
+    "secondaryCommandLineSearchStrings": [null],
+    "tcpPorts": [30196],
+    "udpPorts": [30192, 30193],
+    "storeVersionAvailable": false,
+    "arpUninstallTargets": ["AnyViewer", "#RemovePortableExec"]
+  },
+  {
+    "name": "LiteManager",
+    "developer": "LiteManagerTeam",
+    "primaryCommandLineSearchStrings": ["ROMServer.exe"],
+    "secondaryCommandLineSearchStrings": ["ROMFUSClient"],
+    "tcpPorts": [5650],
+    "udpPorts": [null],
+    "storeVersionAvailable": false,
+    "arpUninstallTargets": ["LiteManager", "#RemovePortableExec"]
+  },
+  {
+    "name": "RuskDesk",
+    "developer": "PURSLANE",
+    "primaryCommandLineSearchStrings": ["rustdesk.exe"],
+    "secondaryCommandLineSearchStrings": [null],
+    "tcpPorts": [21114,21115,21116,21117,21118,21119],
+    "udpPorts": [21116],
+    "storeVersionAvailable": false,
+    "arpUninstallTargets": ["RuskDesk", "#RemovePortableExec"]
+  },
+  {
+    "name": "UltraViewer",
+    "developer": "DucFabulous",
+    "primaryCommandLineSearchStrings": ["UltraViewer_Desktop.exe"],
+    "secondaryCommandLineSearchStrings": [null],
+    "tcpPorts": [2112],
+    "udpPorts": [null],
+    "storeVersionAvailable": false,
+    "arpUninstallTargets": ["UltraViewer", "#RemovePortableExec"]
+  },
+  {
+    "name": "AeroAdmin",
+    "developer": "AeroAdmin LLC",
+    "primaryCommandLineSearchStrings": ["AeroAdmin.exe"],
+    "secondaryCommandLineSearchStrings": [null],
+    "tcpPorts": [null],
+    "udpPorts": [52100],
+    "storeVersionAvailable": false,
+    "arpUninstallTargets": ["#RemovePortableExec"]
+  },
+  {
+    "name": "RealVNC",
+    "developer": "RealVNC",
+    "primaryCommandLineSearchStrings": ["vncserver.exe"],
+    "secondaryCommandLineSearchStrings": [null],
+    "tcpPorts": [5900],
+    "udpPorts": [null],
+    "storeVersionAvailable": false,
+    "arpUninstallTargets": ["RealVNC Server", "RealVNC Connect"]
+  }
+
+]
