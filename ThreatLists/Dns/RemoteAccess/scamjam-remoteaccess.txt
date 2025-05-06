@@ -1,0 +1,104 @@
+# Windows Quick Assisst
+*.support.services.microsoft.com
+
+# Parsec
+*.parsec.app
+
+# Zoho Assisst
+*.zohoassist.com
+
+# RemotePC
+*.remotepc.com
+*.remotedesktop.com
+
+# TeamViewer
+*.teamviewer.com
+
+# Supremo
+*.nanosystems.com
+*.nanosystems.it
+*.supremocontrol.com
+
+# Chrome Remote Desktop
+*.remotedesktop.google.com
+*.remotedesktop-pa.googleapis.com
+
+# AnyDesk
+*.anydesk.com
+
+# AnyViewer
+*.anyviewer.com
+# TODO: get service urls, detect by port
+
+# LiteManager
+*.litemanager.org
+*.litemanager.com
+
+# Rustdesk
+*.rustdesk.com
+
+# LogMeIn Rescue
+*.logmeinrescue.com
+*.logmein-gateway.com
+
+# GoToMyPC
+*.gotomypc.com
+*.expertcity.com
+*.getgo.com
+*.getgoservices.com
+*.getgoservices.net
+
+# UltraViewer
+*.ultraviewer.net
+
+# AeroAdmin
+*.aeroadmin.com
+
+# RealVNC
+*.realvnc.com
+
+# Getscreen
+*.getscreen.me
+
+# Distant Desktop 
+*.distantdesktop.com
+
+# DWService
+*.apiremoteaccess.com
+*.dwservice.net
+
+# HelpWire
+*.helpwire.app
+
+# FixMe.it
+*.techinline.com
+*.fixme.it
+
+# Splashtop
+*.splashtop.com
+
+# Jump Desktop
+*.jumpdesktop.com
+
+# ManageEngine Remote Access Plus
+*.remoteaccess.manageengine.com
+
+# Iperius Remote
+*.iperiusremote.com
+
+# Ultra VNC
+*.uvnc.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+

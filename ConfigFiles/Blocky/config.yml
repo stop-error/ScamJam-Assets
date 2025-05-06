@@ -1,0 +1,56 @@
+upstreams:
+  strategy: strict
+  timeout: 1s
+  groups:
+    default:
+      - https://dns.quad9.net/dns-query
+      - https://security.cloudflare-dns.com/dns-query
+      - 94.140.14.14
+      - 2a10:50c0::1:ff
+bootstrapDns:
+  - upstream: https://dns.quad9.net/dns-query
+    ips:
+      - 9.9.9.9
+      - 149.112.112.112
+      - 2620:fe::9
+      - 2620:fe::fe
+  - upstream: https://security.cloudflare-dns.com/dns-query
+    ips:
+      - 1.1.1.2
+      - 1.0.0.2
+      - 2606:4700:4700::1112
+      - 2606:4700:4700::1002
+blocking:
+  loading:
+    maxErrorsPerSource: -1
+    strategy: fast
+    downloads:
+      timeout: 4m
+  blockType: nxDomain
+  denylists:
+    scamjam-threat:
+      - https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/tif-onlydomains.txt
+    scamjam-popup:
+      - https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/popupads-onlydomains.txt
+    scamjam-nrd:
+      - https://raw.githubusercontent.com/xRuffKez/NRD/refs/heads/main/lists/14-day/domains-only/nrd-14day.txt
+    scamjam-dyndns:
+      - https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/dyndns-onlydomains.txt
+  clientGroupsBlock:
+    default:
+      - scamjam-threat
+      - scamjam-popup
+      - scamjam-nrd
+      - scamjam-dyndns
+#hostsFile:
+  #sources: 
+    #- scamjam-hosts.txt
+  #hostsTTL: 1h
+  #loading:
+    #strategy: fast
+    #refreshPeriod: 1h
+caching:
+  cacheTimeNegative: 30m
+ports:
+  dns: 127.0.0.1:53
+
