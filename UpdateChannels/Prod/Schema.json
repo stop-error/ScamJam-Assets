@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "ScamJam dependency array",
+    "description": "Defines the specific release of a software dependency that ScamJam should use. ScamJam will automatically update to the release specified in targetRelease. Downgrades are not supported.",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "dependencyName": {
+                "type": "string",
+                "description": "Name of dependency (see ScamJam update service docs)."
+            },
+            "targetRelease": {
+                "type": "string",
+                "description": "Specific Github release of dependency that ScamJam should install as an update."
+            }
+        },
+        "required": [
+            "dependencyName",
+            "targetRelease"
+        ]
+    }
+}

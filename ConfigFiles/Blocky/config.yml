@@ -28,23 +28,23 @@ blocking:
       timeout: 4m
   blockType: nxDomain
   denylists:
-    ScamJam-Threat:
+    scamjam-threat:
       - https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/tif-onlydomains.txt
-    ScamJam-Popup:
+    scamjam-popup:
       - https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/popupads-onlydomains.txt
-    ScamJam-Nrd:
+    scamjam-nrd:
       - https://raw.githubusercontent.com/xRuffKez/NRD/refs/heads/main/lists/14-day/domains-only/nrd-14day.txt
-    ScamJam-DynDns:
+    scamjam-dyndns:
       - https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/dyndns-onlydomains.txt
-    ScamJam-RemoteAccess:
+    scamjam-remoteaccess:
       - https://raw.githubusercontent.com/stop-error/ScamJam-Assets/refs/heads/main/ThreatLists/Dns/RemoteAccess/scamjam-remoteaccess.txt
   clientGroupsBlock:
     default:
-      - ScamJam-Threat
-      - ScamJam-Popup
-      - ScamJam-Nrd
-      - ScamJam-DynDns
-      - ScamJam-RemoteAccess
+      - scamjam-threat
+      - scamjam-popup
+      - scamjam-nrd
+      - scamjam-dyndns
+      - scamjam-remoteaccess
 #hostsFile:
   #sources: 
     #- scamjam-hosts.txt
