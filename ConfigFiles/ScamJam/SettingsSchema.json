@@ -1,0 +1,127 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "ScamJam Settings File",
+    "description": "Defines the local settings file used by ScamJam",
+    "required": ["updateConfig", "securityConfig", "userAllowlistsConfig", "userBlocklistsConfig"],
+    "type": "object",
+    "properties": {
+        "updateConfig": {
+            "$ref": "#/$defs/updateSettings"
+        },
+        "securityConfig": {
+            "$ref": "#/$defs/securitySettings"
+        },
+        "userAllowlistsConfig": {
+            "$ref": "#/$defs/userAllowlistsSettings"
+        },
+        "userBlocklistsConfig": {
+            "$ref": "#/$defs/userBlocklistsSettings"
+        }
+    },
+    "$defs": {
+        "updateSettings": {
+            "type": "object",
+            "required": [
+                "updateChannel",
+                "automaticUpdatesEnabled"
+            ],
+            "properties": {
+                "updateChannel": {
+                    "type": [
+                        "string"
+                    ],
+                    "enum": [
+                        "ScamJamFast",
+                        "ScamJamBroad"
+                    ],
+                    "description": "UpdateChannel ScamJam will use for updates"
+                },
+                "automaticUpdatesEnabled": {
+                    "type": "boolean",
+                    "description": "Enables automatic component updates"
+                }
+            }
+        },
+        "securitySettings": {
+            "type": "object",
+            "required": [
+                "dnsClientEnabled",
+                "checkProcessCommandLine",
+                "checkProcessNetworkPorts",
+                "checkProcessAuthenticodeCommonName"
+            ],
+            "properties": {
+                "dnsClientEnabled": {
+                    "type": "boolean",
+                    "description": "Enables DNS filtering via Blocky's recursive DNS client and by setting DNS to localhost on active interfaces. Blocky uses block lists defined in config.yml in ScamJam-Assets"
+                },
+                "checkProcessCommandLine": {
+                    "type": "boolean",
+                    "description": "Search running processes' file name and command line params for maches defined in ScamJam-Assets Executible ThreatData file (primaryCommandLineSearchStrings and secondaryCommandLineSearchStrings)"
+                },
+                "checkProcessNetworkPorts": {
+                    "type": "boolean",
+                    "description": "Look for network ports known to be used by remote access tools, trace back to executible file. Ports are defined in ScamJam-Assets Executible ThreatData file (tcpPorts and udpPorts)"
+                },
+                "checkProcessAuthenticodeCommonName": {
+                    "type": "boolean",
+                    "description": "Check executible's Authenticode Common Name against developer Common Names in ScamJam-Assets Executible ThreatData file (authenticodeCommonName). Used to prevent bypassing protection by chaning the program's file name."
+                }
+            }
+        },
+        "userAllowlistsSettings": {
+            "type": "object",
+            "required": [
+                "userDnsAllowlist",
+                "userCommandLineAllowlist"
+            ],
+            "properties": {
+                "userDnsAllowlist": {
+                    "type": "array",
+                    "description": "List of domains defined by user that will bypass Blocky's configured blocklists.",
+                    "items": {
+                        "type": [
+                            "string"
+                        ]
+                    }
+                },
+                "userCommandLineAllowlist": {
+                    "type": "array",
+                    "description": "List of executible file names that ScamJam should ignore.",
+                    "items": {
+                        "type": [
+                            "string"
+                        ]
+                    }
+                }
+            }
+        },
+        "userBlocklistsSettings": {
+            "type": "object",
+            "required": [
+                "userDnsBlocklist",
+                "userCommandLineBlocklist"
+            ],
+            "properties": {
+                "userDnsBlocklist": {
+                    "type": "array",
+                    "description": "List of domains defined by user that will be blocked by Blocky.",
+                    "items": {
+                        "type": [
+                            "string"
+                        ]
+                    }
+                },
+                "userCommandLineBlocklist":{
+                     "type": "array",
+                    "description": "List of executible file names that ScamJam should treat as threats.",
+                    "items": {
+                        "type": [
+                            "string"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

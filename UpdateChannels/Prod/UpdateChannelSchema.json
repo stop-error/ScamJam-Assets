@@ -1,0 +1,24 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "ScamJam UpdateChannel",
+    "description": "Defines the releases (versions) of software components that ScamJam's software update system should install. Downgrades are not supported.",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "componentName": {
+                "type": "string",
+                "enum": ["ScamJam", "PowerShell", "PowerShellAux", "Blocky", "Shawl"],
+                "description": "Name of component."
+            },
+            "targetRelease": {
+                "type": "string",
+                "description": "Specific Github release of component that ScamJam should install as an update."
+            }
+        },
+        "required": [
+            "componentName",
+            "targetRelease"
+        ]
+    }
+}

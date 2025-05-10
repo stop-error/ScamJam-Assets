@@ -1,22 +1,22 @@
 [
   {
-    "dependencyName": "ScamJam",
+    "componentName": "ScamJam",
     "targetRelease": "v1.00"
   },
   {
-    "dependencyName": "PowerShell",
+    "componentName": "PowerShell",
     "targetRelease": "v7.5.1"
   },
   {
-    "dependencyName": "PowerShellAux",
+    "componentName": "PowerShellAux",
     "targetRelease": "v7.5.1"
   },
   {
-    "dependencyName": "Blocky",
+    "componentName": "Blocky",
     "targetRelease": "v0.25"
   },
   {
-    "dependencyName": "Shawl",
+    "componentName": "Shawl",
     "targetRelease": "v1.7.0"
   }
 ]

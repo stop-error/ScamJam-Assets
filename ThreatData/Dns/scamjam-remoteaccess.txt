@@ -89,6 +89,8 @@
 # Ultra VNC
 *.uvnc.com
 
+# ConnectWise ScreenConnect
+*.screenconnect.com
 
 
 

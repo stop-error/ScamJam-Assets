@@ -1,0 +1,28 @@
+{
+    "updateConfig": {
+        "updateChannel": "ScamJamBroad",
+        "automaticUpdatesEnabled": true
+    },
+    "securityConfig": {
+        "dnsClientEnabled": true,
+        "checkProcessCommandLine": true,
+        "checkProcessNetworkPorts": true,
+        "checkProcessAuthenticodeCommonName": true
+    },
+    "userAllowlistsConfig": {
+        "userDnsAllowlist": [
+            
+        ],
+        "userCommandLineAllowlist": [
+            
+        ]
+    },
+    "userBlocklistsConfig": {
+        "userDnsBlocklist": [
+            
+        ],
+        "userCommandLineBlocklist": [
+            
+        ]
+    }
+}
