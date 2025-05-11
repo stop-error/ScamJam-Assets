@@ -1,104 +1,279 @@
 [
   {
-    "name": "Quick Assist",
-    "developer": "Microsoft Corp.",
-    "primaryCommandLineSearchStrings": ["QuickAssist.exe"],
-    "secondaryCommandLineSearchStrings":[],
-    "tcpPorts": [],
-    "udpPorts": [],
-    "appxVersionAvailable":true,
-    "appxUninstallTargets": ["MicrosoftCorporationII.QuickAssist"],
-    "arpUninstallTargets": []
+    "displayName": "Quick Assist",
+    "productName": "Quick Assist",
+    "authenticodeCommonName": ["CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"],
+    "commandLine": {
+      "primaryCommandLineSearchStrings": [
+        "QuickAssist.exe"
+      ],
+      "secondaryCommandLineSearchStrings": []
+    },
+    "networkPorts": {
+      "tcpLocal": [],
+      "udpLocal": [],
+      "tcpRemote": [],
+      "udpRemote": []
+    },
+    "appx": {
+      "available": true,
+      "packageName": [
+        "MicrosoftCorporationII.QuickAssist"
+      ]
+    },
+    "uninstall": {
+      "portableVersionAvailable": false,
+      "remediationScripts": [],
+      "arp": {
+        "uninstallKeyNames": [],
+        "uninstallKeyDisplayNamePropertySubtrings": []
+      }
+      
+    }
   },
   {
-    "name": "Parsec",
-    "developer": "Parsec Cloud Inc.",
-    "primaryCommandLineSearchStrings": ["parsecd.exe"],
-    "secondaryCommandLineSearchStrings":[],
-    "tcpPorts":[],
-    "udpPorts": [3478],
-    "appxVersionAvailable": false,
-    "arpUninstallTargets": ["Parsec"]
+    "displayName":"Parsec",
+    "productName": "Parsec",
+    "authenticodeCommonName": ["CN=Unity Technologies SF, O=Unity Technologies SF, STREET=30 3rd Street, PostalCode=94103, L=San Francisco, S=California, C=US"],
+    "commandLine": {
+      "primaryCommandLineSearchStrings": [
+        "parsecd.exe"
+      ],
+      "secondaryCommandLineSearchStrings": [
+        "pservice.exe"
+      ]
+    },
+    "networkPorts": {
+      "tcpLocal": [],
+      "udpLocal": ["3478"],
+      "tcpRemote": [],
+      "udpRemote": ["3478"]
+    },
+    "appx": {
+      "available": false,
+      "packageName": []
+    },
+    "uninstall": {
+      "portableVersionAvailable": false,
+      "remediationScripts": [],
+      "arp": {
+        "uninstallKeyNames": ["Parsec"],
+        "uninstallKeyDisplayNamePropertySubtrings": []
+      }
+      
+    }
   },
   {
-    "name": "Zoho Assist",
-    "developer": "Zoho Corporation",
-    "primaryCommandLineSearchStrings": ["Zoho Assist.exe"],
-    "secondaryCommandLineSearchStrings":[],
-    "tcpPorts": [],
-    "udpPorts": [],
-    "appxVersionAvailable": false,
-    "arpUninstallTargets": ["Zoho Assist"]
+    "displayName": "Zoho Assist",
+    "productName": "Zoho Assist",
+    "authenticodeCommonName":[],
+    "commandLine": {
+      "primaryCommandLineSearchStrings": [
+        "Zoho Assist.exe"
+      ],
+      "secondaryCommandLineSearchStrings": []
+    },
+    "networkPorts": {
+      "tcpLocal": [],
+      "udpLocal": [],
+      "tcpRemote": [],
+      "udpRemote": []
+    },
+    "appx": {
+      "available": false,
+      "packageName": []
+    },
+    "uninstall": {
+      "portableVersionAvailable": false,
+      "remediationScripts": [],
+      "arp": {
+        "uninstallKeyNames": [],
+        "uninstallKeyDisplayNamePropertySubtrings": ["Zoho Assist"]
+      }
+    }
   },
   {
-    "name": "RemotePC",
-    "developer": "IDrive Inc",
-    "primaryCommandLineSearchStrings": ["RemotePCHostUI.exe"],
-    "secondaryCommandLineSearchStrings":["RemotePCService.exe", "HostService.exe", "RPCDownloader.exe", "RPCPerformanceService.exe"],
-    "tcpPorts": [],
-    "udpPorts": [],
-    "appxVersionAvailable": true,
-    "arpUninstallTargets": ["RemotePC"]
+    "displayName": "RemotePC",
+    "productName": "RemotePCUI",
+    "authenticodeCommonName":["CN=\"IDrive, Inc.\", O=\"IDrive, Inc.\", L=Calabasas, S=California, C=US"],
+    "commandLine": {
+      "primaryCommandLineSearchStrings": [
+        "RemotePCUI.exe",
+        "RemotePCHostUI.exe"
+
+      ],
+      "secondaryCommandLineSearchStrings": [
+        "RemotePCService.exe",
+        "HostService.exe",
+        "RemotePCDesktop.exe",
+        "ViewerService.exe",
+        "RPCPerformanceService.exe",
+        "RPCDownloader.exe"
+      ]
+    },
+    "networkPorts": {
+      "tcpLocal": [],
+      "udpLocal": [],
+      "tcpRemote": [],
+      "udpRemote": []
+    },
+    "appx": {
+      "available": false,
+      "packageName": []
+    },
+    "uninstall": {
+      "portableVersionAvailable": false,
+      "remediationScripts": [],
+      "arp": {
+        "uninstallKeyNames": [],
+        "uninstallKeyDisplayNamePropertySubtrings": ["RemotePC", "RemotePC Printer"]
+      }
+    }
   },
   {
-    "name": "TeamViewer",
-    "developer": "TeamViewer",
-    "primaryCommandLineSearchStrings": ["TeamViewer.exe"],
-    "secondaryCommandLineSearchStrings": ["TeamViewer_Service.exe"],
-    "tcpPorts": [5938],
-    "udpPorts": [5938],
-    "appxVersionAvailable": true,
-    "arpUninstallTargets": ["TeamViewer"]
+    "displayName": "TeamViewer",
+    "productName": "TeamViewer",
+    "authenticodeCommonName":["CN=TeamViewer Germany GmbH, O=TeamViewer Germany GmbH, L=Göppingen, S=Baden-Württemberg, C=DE"],
+    "commandLine": {
+      "primaryCommandLineSearchStrings": [
+        "TeamViewer.exe"
+      ],
+      "secondaryCommandLineSearchStrings": [
+        "TeamViewer_Service.exe",
+        "tv_w32.exe",
+        "tv_x64.exe"
+      ]
+    },
+    "networkPorts": {
+      "tcpLocal": [5939],
+      "udpLocal": [5939],
+      "tcpRemote": [5938],
+      "udpRemote": [5938]
+    },
+    "appx": {
+      "available": false,
+      "packageName": []
+    },
+    "uninstall": {
+      "portableVersionAvailable": true,
+      "remediationScripts": [],
+      "arp": {
+        "uninstallKeyNames": ["TeamViewer"],
+        "uninstallKeyDisplayNamePropertySubtrings": ["TeamViewer"]
+      }
+    }
   },
   {
-    "name": "Supremo",
-    "developer": "Nanosystems S.r.l.",
-    "primaryCommandLineSearchStrings": ["Supremo.exe"],
-    "secondaryCommandLineSearchStrings": ["SupremoHelper.exe"],
-    "tcpPorts": [5938],
-    "udpPorts": [],
-    "appxVersionAvailable": false,
-    "arpUninstallTargets": ["#RemovePortableExec"]
+    "displayName": "Supremo",
+    "productName": "Supremo Remote Control",
+    "authenticodeCommonName":["CN=Nanosystems S.r.l., O=Nanosystems S.r.l., L=Ascoli Piceno, S=Ascoli Piceno, C=IT, SERIALNUMBER=AP - 111997, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Ascoli Piceno, OID.1.3.6.1.4.1.311.60.2.1.3=IT"],
+    "commandLine": {
+      "primaryCommandLineSearchStrings": [
+        "Supremo.exe"
+      ],
+      "secondaryCommandLineSearchStrings": [
+        "SupremoHelper.exe",
+        "SupremoService.exe"
+      ]
+    },
+    "networkPorts": {
+      "tcpLocal": [],
+      "udpLocal": [],
+      "tcpRemote": [5938],
+      "udpRemote": []
+    },
+    "appx": {
+      "available": false,
+      "packageName": []
+    },
+    "uninstall": {
+      "portableVersionAvailable": true,
+      "remediationScripts": ["Uninstall-Supremo.ps1"],
+      "arp": {
+        "uninstallKeyNames": [],
+        "uninstallKeyDisplayNamePropertySubtrings": []
+      }
+    }
   },
   {
-    "name": "AnyDesk",
-    "developer": "AnyDesk Software GmbH",
-    "primaryCommandLineSearchStrings": ["AnyDesk.exe"],
-    "secondaryCommandLineSearchStrings": [],
-    "tcpPorts": [6568],
-    "udpPorts": [],
-    "appxVersionAvailable": false,
-    "arpUninstallTargets": ["AnyDesk", "#RemovePortableExec"]
+    "displayName": "AnyDesk",
+    "productName": "AnyDesk",
+    "authenticodeCommonName":["CN=AnyDesk Software GmbH, O=AnyDesk Software GmbH, L=Stuttgart, S=Baden-Württemberg, C=DE"],
+    "commandLine": {
+      "primaryCommandLineSearchStrings": [
+        "AnyDesk.exe"
+      ],
+      "secondaryCommandLineSearchStrings": []
+    },
+    "networkPorts": {
+      "tcpLocal": [],
+      "udpLocal": [],
+      "tcpRemote": [6568],
+      "udpRemote": []
+    },
+    "appx": {
+      "available": false,
+      "packageName": []
+    },
+    "uninstall": {
+      "portableVersionAvailable": true,
+      "remediationScripts": ["Uninstall-AnyDesk.ps1"],
+      "arp": {
+        "uninstallKeyNames": [],
+        "uninstallKeyDisplayNamePropertySubtrings": ["AnyDesk"]
+      }
+    }
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   {
     "name": "AnyViewer",
-    "developer": "AOMEI International Network Limited",
+    "publisher": "AOMEI International Network Limited",
     "primaryCommandLineSearchStrings": ["AVCore.exe"],
     "secondaryCommandLineSearchStrings": [],
     "tcpPorts": [30196],
     "udpPorts": [30192, 30193],
     "appxVersionAvailable": false,
-    "arpUninstallTargets": ["AnyViewer", "#RemovePortableExec"]
+    "uninstallKeyDisplayNameSubtring": ["AnyViewer", "#RemovePortableExec"]
   },
   {
     "name": "LiteManager",
-    "developer": "LiteManagerTeam",
+    "publisher": "LiteManagerTeam",
     "primaryCommandLineSearchStrings": ["ROMServer.exe"],
     "secondaryCommandLineSearchStrings": ["ROMFUSClient"],
     "tcpPorts": [5650],
     "udpPorts": [],
     "appxVersionAvailable": false,
-    "arpUninstallTargets": ["LiteManager", "#RemovePortableExec"]
+    "uninstallKeyDisplayNameSubtring": ["LiteManager", "#RemovePortableExec"]
   },
   {
     "name": "RuskDesk",
-    "developer": "PURSLANE",
+    "publisher": "PURSLANE",
     "primaryCommandLineSearchStrings": ["rustdesk.exe"],
     "secondaryCommandLineSearchStrings": [],
     "tcpPorts": [21114,21115,21116,21117,21118,21119],
     "udpPorts": [21116],
     "appxVersionAvailable": false,
-    "arpUninstallTargets": ["RuskDesk", "#RemovePortableExec"]
+    "uninstallKeyDisplayNameSubtring": ["RuskDesk", "#RemovePortableExec"]
   },
   {
     "name": "LogMeIn Rescue"
@@ -108,33 +283,33 @@
   },
   {
     "name": "UltraViewer",
-    "developer": "DucFabulous",
+    "publisher": "DucFabulous",
     "primaryCommandLineSearchStrings": ["UltraViewer_Desktop.exe"],
     "secondaryCommandLineSearchStrings": [],
     "tcpPorts": [2112],
     "udpPorts": [],
     "appxVersionAvailable": false,
-    "arpUninstallTargets": ["UltraViewer", "#RemovePortableExec"]
+    "uninstallKeyDisplayNameSubtring": ["UltraViewer", "#RemovePortableExec"]
   },
   {
     "name": "AeroAdmin",
-    "developer": "AeroAdmin LLC",
+    "publisher": "AeroAdmin LLC",
     "primaryCommandLineSearchStrings": ["AeroAdmin.exe"],
     "secondaryCommandLineSearchStrings": [],
     "tcpPorts": [],
     "udpPorts": [52100],
     "appxVersionAvailable": false,
-    "arpUninstallTargets": ["#RemovePortableExec"]
+    "uninstallKeyDisplayNameSubtring": ["#RemovePortableExec"]
   },
   {
     "name": "RealVNC",
-    "developer": "RealVNC",
+    "publisher": "RealVNC",
     "primaryCommandLineSearchStrings": ["vncserver.exe"],
     "secondaryCommandLineSearchStrings": [],
     "tcpPorts": [5900],
     "udpPorts": [],
     "appxVersionAvailable": false,
-    "arpUninstallTargets": ["RealVNC Server", "RealVNC Connect"]
+    "uninstallKeyDisplayNameSubtring": ["RealVNC Server", "RealVNC Connect"]
   },
   {
     "name": "ScreenConnect"

@@ -4,10 +4,12 @@
         "automaticUpdatesEnabled": true
     },
     "securityConfig": {
-        "dnsClientEnabled": true,
-        "checkProcessCommandLine": true,
-        "checkProcessNetworkPorts": true,
-        "checkProcessAuthenticodeCommonName": true
+        "windowsAppLocker": false,
+        "dnsClient": true,
+        "commandLine": true,
+        "networkPorts": true,
+        "authenticodeCommonName": true,
+        "productName": true
     },
     "userAllowlistsConfig": {
         "userDnsAllowlist": [
